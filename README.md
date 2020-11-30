@@ -11,14 +11,14 @@ Gory details:
 - Call stack:
 
   ```
-  > (ex_unit 1.11.2) lib/ex_unit/capture_log.ex:99: ExUnit.CaptureLog.add_capture/2
-  > (ex_unit 1.11.2) lib/ex_unit/capture_log.ex:70: ExUnit.CaptureLog.capture_log/2
-  > (muzak 1.0.2) lib/muzak/runner.ex:202: Muzak.Runner.run_silent/1
-  > (muzak 1.0.2) lib/muzak/runner.ex:37: Muzak.Runner.run_mutation/3
-  > (muzak 1.0.2) lib/muzak/runner.ex:15: anonymous fn/4 in Muzak.Runner.run_test_loop/2
-  > (elixir 1.11.2) lib/enum.ex:2181: Enum."-reduce/3-lists^foldl/2-0-"/3
-  > (muzak 1.0.2) lib/muzak/runner.ex:13: Muzak.Runner.run_test_loop/2
-  > (muzak 1.0.2) lib/muzak.ex:7: Muzak.run/1
+  (ex_unit 1.11.2) lib/ex_unit/capture_log.ex:99: ExUnit.CaptureLog.add_capture/2
+  (ex_unit 1.11.2) lib/ex_unit/capture_log.ex:70: ExUnit.CaptureLog.capture_log/2
+  (muzak 1.0.2) lib/muzak/runner.ex:202: Muzak.Runner.run_silent/1
+  (muzak 1.0.2) lib/muzak/runner.ex:37: Muzak.Runner.run_mutation/3
+  (muzak 1.0.2) lib/muzak/runner.ex:15: anonymous fn/4 in Muzak.Runner.run_test_loop/2
+  (elixir 1.11.2) lib/enum.ex:2181: Enum."-reduce/3-lists^foldl/2-0-"/3
+  (muzak 1.0.2) lib/muzak/runner.ex:13: Muzak.Runner.run_test_loop/2
+  (muzak 1.0.2) lib/muzak.ex:7: Muzak.run/1
   ```
 
 - Googling the error message gets me absolutely nothing other than the PR to ExUnit where that message was put in place.  It seemed too much digging to figure out what the error message may have been before that, so as to Google it, but since the PR was merged 2017-10-07 I figured relevant results would be fairly likely to be recent.
